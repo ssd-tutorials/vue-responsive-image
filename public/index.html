@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Image Vue Component</title>
+    <link href="./dist/css/app.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<div id="app">
+
+    <div class="row">
+
+        <div class="column">
+
+            <image-tag
+            alt="Some nice image"
+            :paths="{
+                'large': './images/large/01.jpg',
+                'medium': './images/medium/01.jpg',
+                'small': './images/small/01.jpg'
+            }"
+            ></image-tag>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="./dist/js/app.js"></script>
+</body>
+</html>
